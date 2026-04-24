@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Danh Alsawad | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/title icon.png">
+</head>
+ 
+<body>
+ 
+  <!-- Header / Hero -->
+  <header class="hero">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <nav class="navbar">
+      <div class="logo">Danh Alsawad</div>
+ 
+      <div class="nav-links">
+        <a href="#about" class="tab-btn">About</a>
+        <a href="#projects" class="tab-btn">Projects</a>
+        <a href="#github" class="tab-btn">GitHub</a>
+        <a href="#contact" class="tab-btn">Contact</a>
+      </div>
+ 
+      <button id="theme-toggle" class="theme-btn" title="Toggle theme">
+        <img id="theme-icon" src="assets/images/dark.png" alt="Theme icon">
+      </button>
+    </nav>
+ 
+    <div class="hero-content fade-in">
+    <h1 class="hero-title">
+        Hello I'm <span>Danh Alsawad</span> <br />
+        I'm a full stack web developer.
+      </h1>
+      <!-- Visitor name state -->
+      <div class="visitor-greeting" id="visitor-greeting">
+        <div id="greeting-display" class="hidden">
+          <p>Welcome back, <strong id="visitor-name-display"></strong>! 👋</p>
+        </div>
+        <div id="greeting-form">
+          <input type="text" id="visitor-name-input" placeholder="Enter your name to say hi..." maxlength="30" />
+          <button id="save-name-btn" class="primary-btn">Save</button>
+        </div>
+      </div>
+ 
+      <div class="hero-actions">
+        <a href="#about" class="primary-btn">View My Work</a>
+      </div>
+    </div>
+  </header>
+ 
+ 
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="container about-grid">
+  
+      <!-- LEFT SIDE -->
+      <div class="about-text">
+        <h2>About Me</h2>
+  
+        <p>
+          I’m a Software Engineering student focused on building practical and meaningful applications.
+          I enjoy turning ideas into structured, user-friendly solutions using clean code.
+        </p>
+  
+        <p>
+          I’m constantly improving through hands-on projects, exploring new technologies,
+          and solving real-world problems step by step.
+        </p>
+      </div>
+  
+      <!-- RIGHT SIDE (SKILLS) -->
+      <div class="about-skills">
+  
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Git</div>
+  
+      </div>
+  
+    </div>
+  </section>
+ 
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>Featured Work</h2>
+        <p class="section-text">
+          I enjoy building practical and user-focused applications that solve real problems.  
+          Below is a collection of projects I've worked on across different areas of software development.
+        </p>
+      </div>
+ 
+      <!-- Filter + Sort Controls -->
+      <div class="controls-row">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="web" type="button">Web</button>
+          <button class="filter-btn" data-filter="database" type="button">Database</button>
+          <button class="filter-btn" data-filter="desktop" type="button">Desktop</button>
+        </div>
+ 
+        <div class="sort-wrapper">
+          <label for="sort-select" class="sort-label">Sort by:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="default">Default</option>
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="date-desc">Newest First</option>
+            <option value="date-asc">Oldest First</option>
+          </select>
+        </div>
+      </div>
+ 
+      <!-- Projects Grid -->
+      <div id="projects-grid" class="projects-grid">
+ 
+        <article class="project-card" data-category="web" data-name="Meras Platform" data-date="2026-03-01">
+          <img src="assets/images/web.png" alt="Meras Platform Screenshot" loading="lazy" />
+          <div class="project-content">
+            <p class="project-tag">Web Application</p>
+            <h3>Meras Platform</h3>
+            <p>
+              A web platform that helps students explore university majors
+              through guided tasks and practical experiences.
+            </p>
+          </div>
+        </article>
+ 
+        <article class="project-card" data-category="database" data-name="Horse Database System" data-date="2025-11-15">
+          <img src="assets/images/sql1.png" alt="Horse Database System Screenshot" loading="lazy" />
+          <div class="project-content">
+            <p class="project-tag">Database System</p>
+            <h3>Horse Database System</h3>
+            <p>
+              A Python and SQL system for managing horse records, ownership,
+              performance details, and related information.
+            </p>
+          </div>
+        </article>
+ 
+        <article class="project-card" data-category="desktop" data-name="File System Visualizer" data-date="2025-08-20">
+          <img src="assets/images/disktop.avif" alt="Desktop Project Placeholder" loading="lazy" />
+          <div class="project-content">
+            <p class="project-tag">Desktop Application</p>
+            <h3>File System Visualizer</h3>
+            <p>
+              A desktop application concept that visualizes file hierarchies
+              using structured object-oriented design.
+            </p>
+          </div>
+        </article>
+ 
+      </div>
+ 
+      <p id="empty-message" class="empty-message hidden">
+        No projects match this category. Try selecting "All".
+      </p>
+    </div>
+  </section>
+ 
+  <!-- GitHub API Section -->
+  <section id="github" class="section reveal">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-label">GitHub</p>
+        <h2>Latest on GitHub</h2>
+        <p class="section-text">
+          A selection of my most recently updated projects from GitHub.  
+          Each repository reflects my progress, problem-solving approach, and continuous learning.
+        </p>
+      </div>
+ 
+      <div id="github-loader" class="github-loader">
+        <div class="spinner"></div>
+        <p>Fetching repositories…</p>
+      </div>
+ 
+      <div id="github-error" class="github-error hidden">
+        <p>⚠️ Could not load repositories right now. Please try again later or <a href="https://github.com/Dana11a" target="_blank" rel="noopener">visit my GitHub profile</a> directly.</p>
+      </div>
+ 
+      <div id="github-grid" class="github-grid hidden"></div>
+    </div>
+  </section>
+ 
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h2>Get In Touch</h2>
+        <p class="section-text">
+          I love discussing software architecture, automated testing, or the latest in full-stack development. 
+          If you’re looking for a developer to help bring an idea to life or just want to talk shop, feel free to reach out! </p>
+      </div>
+ 
+      <div class="glass-card">
+        <form id="contact-form" novalidate>
+ 
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+          />
+          <p class="field-error hidden" id="name-error">Please enter your name.</p>
+ 
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email (e.g. name@email.com)"
+            autocomplete="email"
+          />
+          <p class="field-error hidden" id="email-error">Please enter a valid email address.</p>
+ 
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here… (minimum 10 characters)"
+          ></textarea>
+          <p class="field-error hidden" id="message-error">Message must be at least 10 characters.</p>
+ 
+          <button type="submit" class="primary-btn form-btn">Send Message</button>
+ 
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+ 
+  <footer>
+    <p id="timer" style="margin-top: 20px; font-weight: bold; color: var(--text-soft);"></p>
+    <p>© 2026 Danh Alsawad. All rights reserved.</p>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
