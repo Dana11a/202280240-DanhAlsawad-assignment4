@@ -12,7 +12,7 @@ The goal of this project is to demonstrate real-world frontend development skill
 
 ## Live Demo
 
-https://github.com/Dana11a/202280240-DanhAlsawad-assignment4.git
+https://dana11a.github.io/202280240-DanhAlsawad-assignment4/
 
 ---
 
