@@ -1,58 +1,54 @@
-# 202280240-DanhAlsawad-assignment3
-# Assignment 3 – Advanced Portfolio
+# Assignment 4 – Personal Portfolio Web Application
 
 ## Project Description
 
-This project is an advanced version of my personal portfolio website built using HTML, CSS, and JavaScript.
+This project is a complete and polished personal portfolio web application built using HTML, CSS, and JavaScript.
 
-It extends previous assignments by adding dynamic features, API integration, and improved user interaction.  
-The goal is to demonstrate advanced JavaScript concepts, state management, and real-world functionality.
+It represents the final stage of development, combining all previously learned concepts into a professional, responsive, and user-friendly website. The application showcases my technical skills, projects, and experience in a structured and interactive way.
+
+The goal of this project is to demonstrate real-world frontend development skills, including dynamic functionality, API integration, state management, and user experience design.
+
+---
+
+## Live Demo
+
+https://github.com/Dana11a/202280240-DanhAlsawad-assignment4.git
 
 ---
 
 ## Features
 
 ### Core Features
-- Responsive design (mobile-friendly)
-- Smooth scrolling navigation
-- Section reveal animations
-- Modern UI design with gradient styling
-
-### UI/UX Improvements
-
-- Redesigned the layout for better visual hierarchy and readability
-- Improved typography, spacing, and section structure
-- Enhanced the hero section for a cleaner and more focused first impression
-- Reworked the “About Me” section with a structured layout and added a skills list
+- Fully responsive design (desktop, tablet, mobile)
+- Smooth navigation and section transitions
+- Clean and modern UI design
 
 ---
 
-### Advanced Functionality (HW3 Requirements)
+### Advanced Functionality
 
-#### 1. API Integration
-- Integrated GitHub API to fetch and display latest repositories dynamically
-- Shows repository name, description, stars, forks, and language
-- Handles API errors with user-friendly message
+#### 🔌 API Integration
+- Integrated GitHub API to dynamically fetch and display repositories
+- Displays repository name, description, and key details
+- Includes error handling for failed requests
 
-#### 2. Complex Logic
-- Multi-step project filtering and sorting system
-- Dynamic DOM updates based on user-selected filters
-- Conditional rendering (empty state when no projects match)
-- Form validation using multiple rules (required, format, length)
-- Real-time session timer tracking user activity
+#### ⚙️ Complex Logic
+- Project filtering by category (web, database, desktop)
+- Sorting functionality (name and date)
+- Search functionality to quickly find projects by name
+- Dynamic DOM updates based on user interaction
+- Form validation (required fields, email format, message length)
+- Empty state handling when no results are found
 
-- Live timer showing time spent on the website
-
-#### 3. State Management
+#### State Management
 - Dark / Light mode toggle using `localStorage`
-- Visitor name stored and displayed (personalized greeting)
-- UI updates dynamically based on user interaction
+- Personalized greeting using stored visitor name
+- Persistent UI preferences
 
-#### 4. Performance Optimization
-- Images use `loading="lazy"`
-- Clean and reusable CSS/JS structure
-- Removed unused code
-- Optimized layout and animations
+#### Performance Optimization
+- Lazy loading for images
+- Optimized CSS and JavaScript structure
+- Removed unused code for better performance
 
 ---
 
@@ -65,77 +61,90 @@ The goal is to demonstrate advanced JavaScript concepts, state management, and r
 ---
 
 ## Folder Structure
-
-```
-202280240-DanhAlsawad-assignment-3/
+id-name-assignment4/
 │
 ├── README.md
 ├── index.html
 ├── css/
-│   └── styles.css
+│ └── styles.css
 ├── js/
-│   └── script.js
+│ └── script.js
 ├── assets/
-│   └── images/
+│ └── images/
 ├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
-│  
+│ ├── ai-usage-report.md
+│ └── technical-documentation.md
+├── presentation/
+│ ├── slides.pdf
+│ └── demo-video.mp4
 └── .gitignore
-```
+
 ---
 
-## How to Run Locally
+## ▶️ How to Run Locally
 
-1. Clone or download the repository
-2. Open `index.html` in your browser
+1. Clone or download the repository  
+2. Open `index.html` in your browser  
 3. Interact with the website:
-   - Enter your name for a personalized greeting
-   - Toggle dark/light mode
-   - Filter and sort projects
-   - View GitHub repositories (fetched dynamically)
-   - Fill contact form to test validation
-   - Observe the live timer
+   - Enter your name for a personalized greeting  
+   - Toggle dark/light mode  
+   - Filter, sort, and search projects  
+   - View GitHub repositories (fetched dynamically)  
+   - Test the contact form validation  
 
 ---
+
 ## AI Usage Summary
 
-AI tools were used to support development, debugging, and improving the overall quality of the portfolio.
+AI tools such as ChatGPT and GitHub Copilot were used to assist with:
 
-Main uses included:
+- Debugging JavaScript logic  
+- Improving UI/UX design  
+- Assisting with API integration  
+- Suggesting code structure and optimizations  
 
-- Debugging JavaScript logic (filtering, sorting, API integration, and form validation)
-- Assisting with GitHub API integration and error handling
-- Improving UI/UX design, layout, and responsiveness
-- Enhancing state management features (theme toggle and visitor name using localStorage)
-- Suggesting performance improvements and cleaner code structure
+All AI-generated suggestions were reviewed, tested, and modified to ensure correctness, originality, and alignment with the project requirements.
+
+For full details, see:  
+📄 `docs/ai-usage-report.md`
 
 ---
+
 ## Performance & Testing
 
-- Tested on Chrome using DevTools
-- Verified responsive behavior on:
-  - Desktop
-  - Tablet
-  - Mobile
+- Tested using browser developer tools (Chrome)
+- Verified responsiveness across:
+  - Desktop  
+  - Tablet  
+  - Mobile  
 
 - Ensured:
-  - Fast loading
-  - No console errors
-  - Smooth animations
+  - Fast loading performance  
+  - No console errors  
+  - Smooth interactions and animations  
 
 ---
+
 ## Key Learning Outcomes
 
-- Working with external APIs (GitHub API)
-- Managing application state with localStorage
-- Implementing complex UI logic (filter + sort)
-- Handling user input and validation
-- Improving performance and UX design
+- Building a complete, real-world web application  
+- Working with external APIs (GitHub API)  
+- Managing application state using localStorage  
+- Implementing dynamic UI logic (filtering, sorting, search)  
+- Improving user experience and performance  
 
 ---
 
+## Future Improvements
+
+- Add backend integration for contact form  
+- Implement authentication system  
+- Store projects dynamically using a database  
+- Enhance UI with more advanced animations  
+
+---
 
 ## Author
+
 Danh Alsawad  
 Software Engineering Student

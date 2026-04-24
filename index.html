@@ -99,6 +99,14 @@
       </div>
  
       <!-- Filter + Sort Controls -->
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="project-search" 
+          placeholder="Search for a project you’re interested in..." 
+          class="search-input"
+        />
+      </div>
       <div class="controls-row">
         <div class="filter-buttons">
           <button class="filter-btn active" data-filter="all" type="button">All</button>
@@ -229,9 +237,9 @@
           <textarea
             id="message"
             name="message"
-            placeholder="Type your message here… (minimum 10 characters)"
+            placeholder="Write your message here..."
           ></textarea>
-          <p class="field-error hidden" id="message-error">Message must be at least 10 characters.</p>
+          <p class="field-error hidden" id="message-error">Please enter a message with at least 10 characters.</p>
  
           <button type="submit" class="primary-btn form-btn">Send Message</button>
  
