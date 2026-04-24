@@ -27,12 +27,12 @@ https://dana11a.github.io/202280240-DanhAlsawad-assignment4/
 
 ### Advanced Functionality
 
-#### 🔌 API Integration
+#### API Integration
 - Integrated GitHub API to dynamically fetch and display repositories
 - Displays repository name, description, and key details
 - Includes error handling for failed requests
 
-#### ⚙️ Complex Logic
+#### Complex Logic
 - Project filtering by category (web, database, desktop)
 - Sorting functionality (name and date)
 - Search functionality to quickly find projects by name
@@ -61,7 +61,7 @@ https://dana11a.github.io/202280240-DanhAlsawad-assignment4/
 ---
 
 ## Folder Structure
-id-name-assignment4/
+202280240-danhalsawad-assignment4/
 │
 ├── README.md
 ├── index.html
@@ -77,6 +77,8 @@ id-name-assignment4/
 ├── presentation/
 │ ├── slides.pdf
 │ └── demo-video.mp4
+│ └── demo-video-link.txt
+|
 └── .gitignore
 
 ---
@@ -106,7 +108,7 @@ AI tools such as ChatGPT and GitHub Copilot were used to assist with:
 All AI-generated suggestions were reviewed, tested, and modified to ensure correctness, originality, and alignment with the project requirements.
 
 For full details, see:  
-📄 `docs/ai-usage-report.md`
+ `docs/ai-usage-report.md`
 
 ---
 
